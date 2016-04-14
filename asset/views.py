@@ -60,7 +60,7 @@ def host_list_manage(request, id=None):   # 负责添加和修改和删除主机
         print request.POST
         operate = request.POST.get('operate')  # 这里表示点击更新了按钮
         if form.is_valid():
-            if action == 'add':   #  点击添加按钮
+            if action == 'add':   # 点击添加按钮
                 form.save()
                 ret.append(form.cleaned_data['ip'])
                 Message.objects.create(type='host', action='manage', action_ip=ret, content='主机添加成功')

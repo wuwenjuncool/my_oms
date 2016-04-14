@@ -87,7 +87,7 @@ DATABASES = {
         'NAME': 'oms',
         'USER': 'root',
         'PORT': 3306,
-        'PASSWORD': 'abc@123',
+        'PASSWORD': '1',
     }
 }
 
